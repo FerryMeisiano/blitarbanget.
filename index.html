@@ -8,36 +8,82 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Blitar Banget</h1>
-    <p>Berita, event, dan budaya lokal Blitar.</p>
-    <img src="blitar.jpg" alt="Kota Blitar" class="header-img" />
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>Blitar Banget</h1>
+      <p>Berita, event, dan budaya lokal Blitar.</p>
+      <a class="cta" href="#sumber" aria-label="Lihat konten pilihan">Lihat Konten</a>
+    </div>
+
+    <!-- gambar hero dari Google/Blogger -->
+    <img
+      class="hero-img"
+      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg2VhQwMu4gCj4Qqk6gQv1-0uZrD8Vh5WZ6PULhZblJ3fEsF-MEDfV1GvUflRllb3xUGlDEwVbWmMNc2nVf6l1GHPuk3nZJcPVyJelOnpxKjjQndn5fGZ9LwN7R2ZXXZV4-3vUq9UjYkM/s1600/tugu-pahlawan-blitar.jpg"
+      alt="Panorama kota Blitar" />
   </header>
 
-  <main class="container">
+  <main class="container" id="sumber">
+    <!-- KARTU 1 -->
+    <a class="card link-card" href="https://infoblitar.com" target="_blank" rel="noopener">
+      <div class="card-media">
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg2VhQwMu4gCj4Qqk6gQv1-0uZrD8Vh5WZ6PULhZblJ3fEsF-MEDfV1GvUflRllb3xUGlDEwVbWmMNc2nVf6l1GHPuk3nZJcPVyJelOnpxKjjQndn5fGZ9LwN7R2ZXXZV4-3vUq9UjYkM/s1600/tugu-pahlawan-blitar.jpg"
+          alt="InfoBlitar" />
+      </div>
+      <div class="card-body">
+        <h2>InfoBlitar</h2>
+        <p>Portal informasi & agenda kota Blitar.</p>
+        <span class="chip">infoblitar.com</span>
+      </div>
+    </a>
+
+    <!-- KARTU 2 -->
+    <a class="card link-card" href="https://bicarablitar.com" target="_blank" rel="noopener">
+      <div class="card-media">
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg2VhQwMu4gCj4Qqk6gQv1-0uZrD8Vh5WZ6PULhZblJ3fEsF-MEDfV1GvUflRllb3xUGlDEwVbWmMNc2nVf6l1GHPuk3nZJcPVyJelOnpxKjjQndn5fGZ9LwN7R2ZXXZV4-3vUq9UjYkM/s1600/tugu-pahlawan-blitar.jpg"
+          alt="Bicara Blitar" />
+      </div>
+      <div class="card-body">
+        <h2>Bicara Blitar</h2>
+        <p>Opini, cerita, dan liputan warga.</p>
+        <span class="chip">bicarablitar.com</span>
+      </div>
+    </a>
+
+    <!-- KARTU 3 -->
+    <a class="card link-card" href="https://jelajahblitar.com" target="_blank" rel="noopener">
+      <div class="card-media">
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg2VhQwMu4gCj4Qqk6gQv1-0uZrD8Vh5WZ6PULhZblJ3fEsF-MEDfV1GvUflRllb3xUGlDEwVbWmMNc2nVf6l1GHPuk3nZJcPVyJelOnpxKjjQndn5fGZ9LwN7R2ZXXZV4-3vUq9UjYkM/s1600/tugu-pahlawan-blitar.jpg"
+          alt="Jelajah Blitar" />
+      </div>
+      <div class="card-body">
+        <h2>Jelajah Blitar</h2>
+        <p>Wisata, kuliner, dan heritage Blitar.</p>
+        <span class="chip">jelajahblitar.com</span>
+      </div>
+    </a>
+
+    <!-- Tentang + Kontak -->
     <section class="card">
       <h2>Tentang</h2>
-      <p>Selamat datang di Blitar Banget — portal untuk informasi lokal, komunitas, dan acara di Blitar. Ikuti kami untuk update terbaru.</p>
-    </section>
-
-    <section class="card">
-      <h2>Konten Awal</h2>
-      <ul>
-        <li>Berita lokal</li>
-        <li>Kalender acara</li>
-        <li>Profil UMKM & komunitas</li>
-      </ul>
+      <p>Blitar Banget mengkurasi tautan dan konten terbaik tentang Blitar. Klik salah satu kartu untuk membuka situs sumber.</p>
     </section>
 
     <section id="kontak" class="card">
       <h2>Kontak</h2>
       <p>Email: <a href="mailto:admin@blitarbanget.com">admin@blitarbanget.com</a></p>
-      <p>Instagram: @blitarbanget</p>
+      <p>Instagram: <a href="https://instagram.com/blitarbanget" target="_blank" rel="noopener">@blitarbanget</a></p>
     </section>
   </main>
 
   <footer>
-    © <span id="year"></span> Blitar Banget — dibuat dengan ❤️
+    © <span id="year"></span> Blitar Banget — kurasi tautan: 
+    <a href="https://infoblitar.com" target="_blank" rel="noopener">InfoBlitar</a> ·
+    <a href="https://bicarablitar.com" target="_blank" rel="noopener">BicaraBlitar</a> ·
+    <a href="https://jelajahblitar.com" target="_blank" rel="noopener">JelajahBlitar</a>
     <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
   </footer>
 </body>
