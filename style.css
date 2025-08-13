@@ -1,0 +1,39 @@
+:root {
+  --accent: #c92a2a;
+  --gold: #d4a017;
+  --bg: #f8f8f8;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial;
+  margin: 0;
+  background: var(--bg);
+  color: #222;
+}
+
+header {
+  background: linear-gradient(90deg, var(--accent), #ff6b6b);
+  color: white;
+  padding: 48px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #777;
+}
